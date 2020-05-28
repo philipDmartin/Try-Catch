@@ -1,18 +1,20 @@
 using System;
 using System.Collections.Generic;
 
-namespace TryCatch
+namespace addressbook
 {
-    class AddressBook
+    public class AddressBook
     {
-        public Dictionary<string, Contact> Contact { get; set; }
-        public void AddContact()
-        {
+        private Dictionary<string, Contact> _addressList = new Dictionary<string, Contact>();
 
+        public void AddContact(Contact contact)
+        {
+            _addressList.Add(contact.Email);
         }
-        public void GetByEmail()
-        {
 
+        public Contact GetByEmail(string email)
+        {
+            return _addressList.Email;
         }
     }
 }
