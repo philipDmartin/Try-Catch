@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TryCatch
 {
@@ -39,7 +40,6 @@ namespace TryCatch
                 Address = "888 Easy St, Testville, TN 11111"
             };
 
-
             // Create an AddressBook and add some contacts to it
             AddressBook addressBook = new AddressBook();
             addressBook.AddContact(bob);
@@ -48,7 +48,6 @@ namespace TryCatch
 
             // Try to addd a contact a second time
             addressBook.AddContact(sue);
-
 
             // Create a list of emails that match our Contacts
             List<string> emails = new List<string>() {
