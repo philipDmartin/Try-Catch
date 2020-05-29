@@ -2,7 +2,7 @@ using System;
 
 namespace TryCatch
 {
-    class Contact
+    public class Contact
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
